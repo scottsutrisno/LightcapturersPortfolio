@@ -36,7 +36,7 @@ yepnope({
 	test: Modernizr.csstransforms,
 	yep: ['../lib/turn.js'],
 	nope: ['../lib/turn.html4.min.js'],
-	both: ['css/basic.css'],
+	both: ['css/main.css'],
 	complete: loadApp
 });
 

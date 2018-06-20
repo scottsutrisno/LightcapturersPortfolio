@@ -89,8 +89,16 @@ jQuery(document).ready(function () {
 
 
 
-
-
+	$("body").keydown(function (e) {
+		// left arrow
+		if ((e.keyCode || e.which) == 37) {
+			$('.flipbook').turn('previous');
+		}
+		// right arrow
+		if ((e.keyCode || e.which) == 39) {
+			$('.flipbook').turn('next');
+		}
+	});
 
 
 

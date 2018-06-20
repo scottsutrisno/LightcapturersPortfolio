@@ -98,6 +98,15 @@ jQuery(document).ready(function () {
 		if ((e.keyCode || e.which) == 39) {
 			$('.flipbook').turn('next');
 		}
+
+		if ((e.keyCode || e.which) == 38) {
+			$('.flipbook').turn('previous');
+		}
+		// right arrow
+		if ((e.keyCode || e.which) == 40) {
+			$('.flipbook').turn('next');
+		}
+
 	});
 
 

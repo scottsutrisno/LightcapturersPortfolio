@@ -1,4 +1,4 @@
-# lightcapturers_portfolio
+# Lightcapturers Portfolio
 ## Company Portfolio for Lightcapturers
 
 

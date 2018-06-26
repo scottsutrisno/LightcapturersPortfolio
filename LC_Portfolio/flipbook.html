@@ -7,12 +7,28 @@
         <script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
         <script type="text/javascript" src="../extras/modernizr.2.5.3.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.beforeafter.js"></script>
+		<script type="text/javascript">
+		$(function(){
+            $('.container2').beforeAfter();
+        });
+
+        $(function(){
+            $('.container3').beforeAfter2();
+            $('.container4').beforeAfter2();
+            $('.container5').beforeAfter2();
+        });
+        </script>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     </head>
 
     <body>
         <div class="flipbook-viewport">
 
-
+.flipbook-viewport .container { display: inline-block; margin: 0 auto; }
             <div class="container">
                 <div class="flipbook">
 
@@ -35,7 +51,15 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <section><img src="pages/2.png"></section>
+                        <section class="text">
+                            <h1>ARTS AND SCIENCES</h1>
+                            <p><b>O</b>ur team of Lightcapturers takes great pride in building a tightly knit group of creatives who execute everything in-house. From
+                            campaign planning, photography, videography, graphic design, and even retouching is executed by a Lightcapturer. We found
+                            working with this integrated approach increases productivity, keeps things simpler, and our clients get the most out of each
+                            member of our team. The combination of talent within our lean team improves the overall flow of projects while making work
+                            with us agile and flexible.</p>
+                        </section>
+                        <section class="p1"><img src="pages/2.jpg"></section>
                     </div>
 
 
@@ -54,7 +78,17 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <section><img src="pages/3.png"></section>
+                        <section class="text">
+                            <h1>STUDY OF LIGHT</h1>
+                            <p>
+                                <b>A</b>rts and sciences is a philosophy that we truly stand beside. We feel the difference between a good photographer and
+                                a great photographer is the attention to technical aspects of photography as well as the subjective arts. We study every
+                                aspect of our craft, from lighting to composition to staging. Ever since we started creating brand defining content, we have
+                                never stopped our experimental lighting concepts and our pursuit of mastery.</p>
+                        </section>
+                        <section class="p1">
+                            <img src="pages/3.jpg">
+                        </section>
                     </div>
 
 
@@ -73,11 +107,22 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <section><img src="pages/4.png"></section>
+                        <section class="text2">
+                            <h3>LIGHT CONTROL</h3>
+                        </section>
+                        <section class="p2">
+                            <img src="pages/4l.jpg">
+                        </section>
+                        <section class="p3">
+                            <img src="pages/4tl.jpg">
+                            <img src="pages/4br.jpg">
+                            <img src="pages/4bl.jpg">
+                            <img src="pages/4br.jpg">
+                        </section>
                     </div>
 
 
-                    <div>
+                    <div class="pbg">
                         <nav>
                             <ul>
                                 <li class="photography">photography</li>
@@ -92,7 +137,19 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <section><img src="pages/5.png"></section>
+
+                        <section class="text2">
+                            <h3 class="white">LIGHT SHAPING</h3>
+                        </section>
+                        <section class="p2">
+                            <img src="pages/5l.jpg">
+                        </section>
+                        <section class="p3">
+                            <img src="pages/5tl.jpg">
+                            <img src="pages/5tr.jpg">
+                            <img src="pages/5bl.jpg">
+                            <img src="pages/5br.jpg">
+                        </section>
                     </div>
 
 
@@ -185,7 +242,6 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <!-- <section><img src="pages/10.png"></section> -->
                     </div>
 
 
@@ -204,7 +260,47 @@
                             </ul>
                             <img src="pages/logo.png">
                         </nav>
-                        <!-- <section><img src="pages/11.png"></section> -->
+
+
+
+                    <div class="container2">
+                       <div><img alt="before" src="pages/before.jpg"></div>
+
+                       <div class="resize">
+                        <img alt="after" src="pages/after.jpg"></div>
+                        <span id="handle"></span>
+                    </div>
+
+                    <div class="container3">
+                        <div><img alt="before" src="pages/before.jpg"></div>
+
+                        <div class="resize">
+                            <img alt="after" src="pages/after.jpg"></div>
+                        <span id="handle"></span>
+                    </div>
+
+                    <div class="container4">
+                        <div><img alt="before" src="pages/before.jpg"></div>
+
+                        <div class="resize">
+                            <img alt="after" src="pages/after.jpg"></div>
+                        <span id="handle"></span>
+                    </div>
+
+                    <div class="container5">
+                        <div><img alt="before" src="pages/before.jpg"></div>
+
+                        <div class="resize">
+                            <img alt="after" src="pages/after.jpg"></div>
+                        <span id="handle"></span>
+                    </div>
+
+
+
+
+
+
+
                     </div>
 
 
@@ -217,5 +313,7 @@
             <div class="logo"><img src="pages/logo.png"></div>
 
         </div>
+
+        <footer><p>© 2018 by LightCapturers</p></footer>
     </body>
 </html>

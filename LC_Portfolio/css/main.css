@@ -3,6 +3,13 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1.8px;
+}
+
+.white {
+	color: white;
 }
 
 .flipbook-viewport {
@@ -13,8 +20,8 @@ body {
 
 .flipbook-viewport .container {
 	position: absolute;
-	top: 51%;
-	left: 43.4%;
+	top: 49%;
+	left: 37%;
 	margin: 0 auto;
 }
 
@@ -51,46 +58,38 @@ body {
 	margin: 0;
 }
 
-/*
-.flipbook-viewport .shadow {
-	-webkit-transition: -webkit-box-shadow 0.5s;
-	-moz-transition: -moz-box-shadow 0.5s;
-	-o-transition: -webkit-box-shadow 0.5s;
-	-ms-transition: -ms-box-shadow 0.5s;
-	-webkit-box-shadow: 0 0 20px #ccc;
-	-moz-box-shadow: 0 0 20px #ccc;
-	-o-box-shadow: 0 0 20px #ccc;
-	-ms-box-shadow: 0 0 20px #ccc;
-	box-shadow: 2px 2px 5px white;
-} */
+button:focus,
+input[type="button"]:focus {
+	outline: none;
+}
 
 #previousPage {
 	border-radius: 50%;
 	text-decoration: none;
 	display: block;
-	padding: 8px 19.5px 11px 18px;
-	font-size: 20px;
-	color: black;
-	border: solid white 1.5px;
-	background-color: white;
+	padding: 10px 22.5px 12px 22px;
+	font-size: 35px;
+	color: white;
+	border: solid black 1.5px;
+	background-color: transparent;
 	position: absolute;
 	top: 48%;
-	left: 60px;
+	left: 0px;
 }
 
 #nextPage {
 	border-radius: 50%;
 	text-decoration: none;
 	display: block;
-	padding: 8px 18px 11px 19.5px;
-	font-size: 20px;
-	color: black;
-	border: solid white 1.5px;
-	background-color: white;
+	padding: 10px 18px 11.5px 19px;
+	font-size: 35px;
+	color: white;
+	border: solid black 1.5px;
+	background-color: black;
 	position: relative;
 	position: absolute;
 	top: 48%;
-	right: 60px;
+	right: 0px;
 }
 
 #toflip {
@@ -109,13 +108,28 @@ body {
 }
 
 #previousPage:hover {
-	box-shadow: 0px 0px 30px white;
 	cursor: pointer;
+	animation: grow 1.5s forwards infinite;
 }
 
 #nextPage:hover {
-	box-shadow: 0px 0px 30px white;
 	cursor: pointer;
+	animation: grow 1.5s forwards infinite;
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+	50% {
+		transform: scale(2.0);
+		-webkit-transform: scale(2.0);
+	}
+	100% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
 }
 
 .bg {
@@ -159,24 +173,31 @@ body {
 .logo img {
 	margin: 0 auto;
 	display: block;
-	margin-top: 17px;
+	margin-top: -10px;
 	width: 180px;
 	height: 67px;
 }
 
 nav {
 	background: #C4C4C6;
-	width: 20%;
-	height: 102%;
+	width: 16%;
+	height: 105%;
 	margin-top: -20px;
-	padding-top: 50px;
+	padding-top: 85px;
 }
 
 nav ul {
-	text-align: center;
+	text-align: right;
 	width: 100%;
 	display: inline;
-	text-align: center;
+	margin-right: 20px;
+	box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+	box-sizing: border-box;
 }
 
 nav li {
@@ -186,7 +207,7 @@ nav li {
 	font-size: 12px;
 	color: white;
 	width: 100%;
-	padding: 10px 0px;
+	padding: 5px 25px 5px 0px;
 }
 
 nav li:hover {
@@ -199,8 +220,8 @@ nav img {
 	height: 60px;
 	width: 160px;
 	position: relative;
-	top: 60px;
-	left: 25px;
+	top: 85px;
+	left: 27px;
 }
 
 .highlight {
@@ -210,11 +231,105 @@ nav img {
 
 section {
 	float: right;
-	position: absolute;
-	top: 50px;
-	left: 220px;
+	position: absolute !important;
+	top: 0px;
+	left: 209px;
 }
 
 section img {
-	width: 102%;
+	width: 110%;
+}
+
+.text h1 {
+	font-size: 30px;
+}
+
+.text {
+	width: 26%;
+	font-size: 10px;
+	margin-top: 15%;
+	margin-left: 6%;
+}
+
+.text2 {
+	width: 26%;
+	font-size: 10px;
+	margin-top: 12%;
+	margin-left: 30%;
+}
+
+.pbg {
+	background-color: #2B2E34 !important;
+}
+
+.p1 {
+	position: absolute !important;
+	top: 165px;
+	left: 710px;
+}
+
+.p1 img {
+	width: 580px !important;
+	padding: 0px !important;
+}
+
+.p2 {
+	position: absolute !important;
+	top: 207px;
+	left: 220px;
+}
+
+.p2 img {
+	width: 490px;
+}
+
+.p3 {
+	position: absolute !important;
+	top: 45px;
+	left: 732px;
+	width: 50%;
+}
+
+.p3 img {
+	width: 280px;
+	padding: 10px;
+}
+
+.container2 {
+	position: absolute !important;
+	top: 24%;
+	left: 17%;
+}
+
+.container3 {
+	position: absolute !important;
+	top: 13px;
+	right: 10px;
+}
+
+.container4 {
+	position: absolute !important;
+	top: 35%;
+	right: 10px;
+}
+
+.container5 {
+	position: absolute !important;
+	bottom: 13px;
+	right: 10px;
+}
+
+footer {
+	color: white;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 5px;
+	left: 45%;
+	letter-spacing: 1px;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px
 }

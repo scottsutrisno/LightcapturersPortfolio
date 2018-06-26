@@ -7,11 +7,11 @@
 			display: 'single',
 
 
-			width: 1100,
+			width: 1300,
 
 			// Height
 
-			height: 600,
+			height: 650,
 
 			// Elevation
 
